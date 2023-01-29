@@ -23,7 +23,8 @@ export const useTableStore = defineStore('tableStore', {
                     this.loading = false
                 })
                 .catch(error => {
-                    console.log(error)
+                    console.log('Нет файла с id: '+id)
+                    //console.log(error)
                     this.loading = false
                     this.end = true
                 })
